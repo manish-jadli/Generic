@@ -2,7 +2,7 @@
 
 
 body {
-    background:lightgray;
+    background: #eaf0f5 !important;
 }
 
 
@@ -30,20 +30,44 @@ body {
         border-radius: 8px;
     }
 
-#header {
-    position: fixed;
-    min-height: 70px;
-    height: 70px;
-    box-shadow: 0px 1px 1px #ddd;
-    /* margin-bottom: 10px; */
-    width: 100%;
-    background: #f8f8f8;
-    z-index: 99999;
+
+#navbar ul {
+    display: flex;
+    border-bottom: 1px solid #ddd;    
 }
+
+    #navbar ul li {
+        margin: 0px 15px;
+        padding-bottom: 10px;
+    }
+
+    #navbar ul li a:hover{
+        list-style:none;
+        text-decoration:none;
+    }
+
+        #navbar ul li:nth-child(5) {
+            border-bottom: 4px solid #008FC7;
+            margin-bottom: -3px;
+        }
+
+
+        /*id code here*/
+        #header {
+            position: fixed;
+            min-height: 70px;
+            height: 70px;
+            box-shadow: 0px 1px 1px #ddd;
+            /* margin-bottom: 10px; */
+            width: 100%;
+            background: #f8f8f8;
+            z-index: 99999;
+        }
 
     #header .pull-left {
         line-height: 70px;
-        text-indent: 15px;
+        /*text-indent: 15px;*/
+        padding: 0px 45px;
     }
 
 
@@ -54,12 +78,14 @@ body {
     min-height: 100%;
     background: white;
     padding: 15px;
+    z-index:99;
 }
 
 #leftsidebar ul li{
     text-align:center;
-    margin:0 auto;
+    margin:5px auto;
 }
+
 
     #rightsidebar{
         padding-left:100px;
@@ -101,6 +127,21 @@ body {
     border-radius: 50px;
 }
 
+.fa-user {
+    background: #ddd;
+    padding: 9px;
+    border-radius: 50px;
+}
+
+.fa-address-card-o {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    margin: 15px 0px;
+    color: #505050 !important;
+}
+
 #deviceactivity .fa-users {
     background: pink;
     padding: 9px;
@@ -139,8 +180,79 @@ body {
 }
 
 #divicetype{
-    min-height:400px;
-    max-height:400px;
+    min-height:440px;
+    max-height:440px;
     overflow-x:hidden;
     overflow:auto;
 }
+
+#recentactivity {
+    min-height: 200px;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow: auto;
+}
+
+
+/*dashboard 3 code*/
+
+#deviceheader {
+    background: #008FC7;
+    color:#fff;
+}
+
+#managebody{
+    min-height:226px;
+    max-height:226px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+#sensor {
+    min-height: 180px;
+    max-height: 180px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.t-10{
+top:10px;
+position:relative;
+}
+
+/*end*/
+/*end*/
+/*login form code*/
+#loginForm {
+    background: white;
+    padding: 30px;
+    align-items: center;
+    justify-items: center;
+    top: 10em;
+    bottom: 0;
+    box-shadow: 0px 0px 4px;
+    border-radius: 4px;
+}
+
+
+/*end*/
+
+
+
+
+
+/*class code here*/
+
+.pointer{
+    cursor:pointer;
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
+
+.vhide{
+    visibility:hidden;
+}
+
+/*end*/

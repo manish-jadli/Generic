@@ -1,2 +1,37 @@
-﻿body {
+﻿
+.outer {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.paddle {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 30px;
+    height: 20px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+#left-button, #right-button {
+    position: absolute;
+    line-height: 182px;
+    height: 182px;
+    background: #eaf0f5;
+    padding: 0px 5px;
+    z-index: 9;
+}
+
+
+.col-3 {
+    flex: 0 0 25%;
 }
